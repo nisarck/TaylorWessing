@@ -1,0 +1,38 @@
+﻿@model List<TaylorWessing.Models.Matter>
+@{
+    ViewBag.Title = "Client Search";
+}
+<main>
+    <section class="row" aria-labelledby="aspnetTitle">
+        <h1 id="title">Taylor Wessing Matter Data</h1>
+    </section>
+    <hr>
+    @using (Html.BeginForm("Get", "Matter", FormMethod.Post))
+    {
+        <div>
+            <b>Matter Id: </b> @Html.TextBox("matterid", (String)ViewBag.matterid)
+                        <button class="button" type="submit" style="appearance:button; background:#FD9700;">
+                <a style="color:#FFFFFF; text-decoration:none; letter-spacing:0px !important; font-weight:light; font-size:14px;">Get Matter Data By Id</a>
+            </button>
+            <hr />
+            <hr />
+            <table border="1" width="100%">
+                <tr bgcolor="grey" style="color: white;">
+                    <th>
+                        Matter Name
+                    </th>                    
+                    <th>
+                        Date Created
+                    </th>
+                </tr>
+                @foreach (var c in Model)
+                {
+                    <tr>
+                        <th>@c.Name</th>
+                        <th>@c.DateCreated</th>
+                    </tr>
+                }
+            </table>
+        </div>
+    }
+</main>

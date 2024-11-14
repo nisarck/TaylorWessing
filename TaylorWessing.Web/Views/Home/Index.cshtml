@@ -1,0 +1,38 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+<main>
+    <section class="row" aria-labelledby="aspnetTitle">
+        <h1 id="title">Taylor Wessing Client Search</h1>
+        <h3>
+            Discover the Results You’re Looking For – Click Below to Start
+        </h3>
+    </section>
+    <hr>
+    <div>
+        <div class="full2 textstyle submit">
+            <button class="button" type="button" style="appearance:button; background:#FD9700;" onclick="location.href='@Url.Action("Index", "Client")'">
+                <a style="color:#FFFFFF; text-decoration:none; letter-spacing:0px !important; font-weight:light; font-size:14px;">Get Client By Id</a>
+            </button>
+        </div>
+        </br>
+        <div class="full2 textstyle submit">
+            <button class="button" type="submit" style="appearance:button; background:#FD9700;" onclick="location.href='@Url.Action("SearchIndex", "Client")'">
+                <a style="color:#FFFFFF; text-decoration:none; letter-spacing:0px !important; font-weight:light; font-size:14px;">Search Client</a>
+            </button>
+        </div>
+        </br>
+        <div class="full2 textstyle submit">
+            <button class="button" type="submit" style="appearance:button; background:#FD9700;" onclick="location.href='@Url.Action("SearchIndex", "Matter")'">
+                <a style="color:#FFFFFF; text-decoration:none; letter-spacing:0px !important; font-weight:light; font-size:14px;">Search Matter</a>
+            </button>
+        </div>
+        </br>
+        <div class="full2 textstyle submit">
+            <button class="button" type="submit" style="appearance:button; background:#FD9700;" onclick="location.href='@Url.Action("Index", "Matter")'">
+                <a style="color:#FFFFFF; text-decoration:none; letter-spacing:0px !important; font-weight:light; font-size:14px;">Get Matter Data By Id</a>
+            </button>
+        </div>
+
+    </div>
+</main>

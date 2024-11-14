@@ -1,0 +1,45 @@
+﻿@model List<TaylorWessing.Models.Client>
+@{
+    ViewBag.Title = "Client Search";
+}
+<main>
+    <section class="row" aria-labelledby="aspnetTitle">
+        <h1 id="title">Taylor Wessing Client Search</h1>
+    </section>
+    <hr>
+    @using (Html.BeginForm("Get", "Client", FormMethod.Post))
+    {
+        <div>
+            <b>Client Id: </b> @Html.TextBox("Clientid", (String)ViewBag.Clientid)
+            <button class="button" type="submit" style="appearance:button; background:#FD9700;">
+                <a style="color:#FFFFFF; text-decoration:none; letter-spacing:0px !important; font-weight:light; font-size:14px;">Get Client By Id</a>
+            </button>
+            <hr />
+            <table border="1" width="100%">
+                <tr bgcolor="grey" style="color: white;">
+                    <th>
+                        Client Name
+                    </th>
+                    <th>
+                        Email Address
+                    </th>
+                    <th>
+                        Phone Number
+                    </th>
+                    <th>
+                        Date Created
+                    </th>
+                </tr>
+                @foreach (var c in Model)
+                {
+                    <tr>
+                        <th>@c.Name</th>
+                        <th>@c.EmailId</th>
+                        <th>@c.Phone</th>
+                        <th>@c.DateAdded</th>
+                    </tr>
+                }
+            </table>
+        </div>
+    }
+</main>

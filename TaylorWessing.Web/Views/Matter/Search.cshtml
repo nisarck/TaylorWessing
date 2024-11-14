@@ -1,0 +1,56 @@
+﻿@model List<TaylorWessing.Models.Matter>
+@{
+    ViewBag.Title = "Client Search";
+}
+<main>
+    <section class="row" aria-labelledby="aspnetTitle">
+        <h1 id="title">Taylor Wessing Matter Search</h1>
+    </section>
+    <hr>
+    @using (Html.BeginForm("Search", "Matter", FormMethod.Post))
+    {
+        <div>
+            <b>Client Id: </b> @Html.TextBox("clientId", (String)ViewBag.clientId)
+            <b>Sort Column: </b>
+            <select class="input-lg" style="" name="sortcolumn">
+                <option value="0" style="color:#ccc !important;">
+                    Select Column for Sort
+                </option>
+                <option value="Name" selected>Name</option>
+                <option value="DateCreated">DateCreated</option>
+            </select>
+            <b>Sort By: </b>
+            <select class="input-lg" style="" id="sortby" name="sortby">
+                <option value="0" style="color:#ccc !important;">
+                    Column Sort By
+                </option>
+                <option value="Ascending" selected>Ascending</option>
+                <option value="Descending">Descending</option>
+            </select>
+            <br /><br />
+            <b>Page Index: </b> @Html.TextBox("PageIndex", (String)ViewBag.PageIndex)
+            <b>Offset: </b> @Html.TextBox("PageOffset", (String)ViewBag.PageOffset)
+            <button class="button" type="submit" style="appearance:button; background:#FD9700;">
+                <a style="color:#FFFFFF; text-decoration:none; letter-spacing:0px !important; font-weight:light; font-size:14px;">Matter Search</a>
+            </button>
+            <hr />
+            <table border="1" width="100%">
+                <tr bgcolor="grey" style="color: white;">
+                    <th>
+                        Matter Name
+                    </th>                    
+                    <th>
+                        Date Created
+                    </th>
+                </tr>
+                @foreach (var c in Model)
+                {
+                    <tr>
+                        <th>@c.Name</th>
+                        <th>@c.DateCreated</th>
+                    </tr>
+                }
+            </table>
+        </div>
+    }
+</main>
