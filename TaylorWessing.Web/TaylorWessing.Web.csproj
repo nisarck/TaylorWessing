@@ -11,6 +11,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\TaylorWessing.Log\TaylorWessing.Log.csproj" />
     <ProjectReference Include="..\TaylorWessing.Model\TaylorWessing.Model.csproj" />
   </ItemGroup>
 

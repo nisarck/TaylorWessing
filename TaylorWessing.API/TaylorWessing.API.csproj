@@ -37,7 +37,12 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Include="TaylorWessing.Log.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\TaylorWessing.DAL\TaylorWessing.DAL.csproj" />
+    <ProjectReference Include="..\TaylorWessing.Log\TaylorWessing.Log.csproj" />
     <ProjectReference Include="..\TaylorWessing.Model\TaylorWessing.Model.csproj" />
   </ItemGroup>
 

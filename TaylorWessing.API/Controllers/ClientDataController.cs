@@ -12,7 +12,7 @@ namespace TaylorWessing.API.Controllers
     public class ClientDataController : ControllerBase
     {
         private ILog logger = new Log.Log(typeof(ClientDataController));
-
+        
         /// <summary>
         /// This is and endpoint used to search for clients:
         /// </summary>

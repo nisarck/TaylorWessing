@@ -11,6 +11,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TaylorWessing.API", "Taylor
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TaylorWessing.Model", "TaylorWessing.Model\TaylorWessing.Model.csproj", "{5EB37EA1-4B42-48B1-B7E4-710F561CD0C1}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TaylorWessing.Log", "TaylorWessing.Log\TaylorWessing.Log.csproj", "{6B83564B-5024-47FE-B36D-0D0D4594DB2B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{5EB37EA1-4B42-48B1-B7E4-710F561CD0C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5EB37EA1-4B42-48B1-B7E4-710F561CD0C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5EB37EA1-4B42-48B1-B7E4-710F561CD0C1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6B83564B-5024-47FE-B36D-0D0D4594DB2B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B83564B-5024-47FE-B36D-0D0D4594DB2B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6B83564B-5024-47FE-B36D-0D0D4594DB2B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6B83564B-5024-47FE-B36D-0D0D4594DB2B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
