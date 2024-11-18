@@ -7,8 +7,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TaylorWessing.DAL", "Taylor
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TaylorWessing.Web", "TaylorWessing.Web\TaylorWessing.Web.csproj", "{FFB3BE18-15B7-446E-B792-B148CAC11646}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TaylorWessing.Log", "TaylorWessing.Log\TaylorWessing.Log.csproj", "{76EBC568-0475-4B03-BB98-40DDAAC0503A}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TaylorWessing.API", "TaylorWessing.API\TaylorWessing.API.csproj", "{DCF01478-CCE0-4764-AF85-F7864138085B}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TaylorWessing.Model", "TaylorWessing.Model\TaylorWessing.Model.csproj", "{5EB37EA1-4B42-48B1-B7E4-710F561CD0C1}"
@@ -27,10 +25,6 @@ Global
 		{FFB3BE18-15B7-446E-B792-B148CAC11646}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FFB3BE18-15B7-446E-B792-B148CAC11646}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FFB3BE18-15B7-446E-B792-B148CAC11646}.Release|Any CPU.Build.0 = Release|Any CPU
-		{76EBC568-0475-4B03-BB98-40DDAAC0503A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{76EBC568-0475-4B03-BB98-40DDAAC0503A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{76EBC568-0475-4B03-BB98-40DDAAC0503A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{76EBC568-0475-4B03-BB98-40DDAAC0503A}.Release|Any CPU.Build.0 = Release|Any CPU
 		{DCF01478-CCE0-4764-AF85-F7864138085B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{DCF01478-CCE0-4764-AF85-F7864138085B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DCF01478-CCE0-4764-AF85-F7864138085B}.Release|Any CPU.ActiveCfg = Release|Any CPU

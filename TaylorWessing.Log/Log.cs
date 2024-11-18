@@ -2,9 +2,7 @@
 using System.Configuration;
 using log4net;
 using log4net.Config;
-
-
-namespace TaylorWessing.Log
+mespace TaylorWessing.Log
 {
     public class Log : ILog
     {
